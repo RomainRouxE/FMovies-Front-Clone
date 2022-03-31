@@ -1,0 +1,166 @@
+.main .socialsContainer {
+  display: flex;
+}
+.main .social {
+  height: 30px;
+  margin: 0 2px 5px;
+}
+.main .social:hover {
+  transition: 0.5s;
+  transform: translate(0, -5px);
+}
+.main .socialsContainer a {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: white;
+  padding: 10px 21px 8px 10px;
+}
+.main .socialsContainer i {
+  font-size: 14px;
+  padding-right: 11px;
+}
+
+.main .text {
+  margin: 30px 0;
+  font-family: Arial;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14.5px;
+  line-height: 1.55em;
+}
+
+.main .movie section {
+  margin-bottom: 20px;
+}
+.movie .latest-title {
+  display: inline-block;
+  width: fit-content;
+  font-size: 26px;
+  line-height: 34px;
+  height: 34px;
+  padding: 0;
+  margin: 0 1.5rem 30px 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+}
+
+.movie .latest-title::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  width: 40%;
+  background: #343a40;
+  height: 1px;
+}
+.movie button {
+  padding: 9px 10px;
+  border-radius: 3px;
+  line-height: 1em;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+  background: #212529;
+  border: none;
+}
+.movie button i {
+  padding-right: 10px;
+}
+.movie button.active {
+  color: #f8f9fa;
+  background: #00acc1;
+}
+.movie button:hover:not(.active) {
+  color: #f8f9fa;
+  background: #343a40;
+}
+.movie .movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie .movie-all {
+  width: 11.7%;
+  margin: 0 0.4% 2%;
+}
+.movie .movie-poster {
+  width: 100%;
+  aspect-ratio: 17/25;
+  position: relative;
+}
+.movie .movie-poster img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.movie .movie-poster i {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 60px;
+  color: transparent;
+}
+.movie-poster:hover {
+  transition: 0.5s;
+  opacity: 0.5;
+}
+.movie .movie-poster:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.movie .movie-quality {
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 10px;
+  font-size: 12px;
+  line-height: 1em;
+  font-weight: 500;
+  padding: 3px 5px;
+  border-radius: 2px;
+  color: #000;
+  background-color: #fff;
+}
+.movie .movie-desc {
+  padding: 10px 0;
+}
+.movie .movie-desc a {
+  all: unset;
+}
+.movie .movie-desc .movie-title {
+  font-size: 15px;
+  line-height: 1.3em;
+  font-weight: 400;
+  margin: 0 0 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.movie .movie-desc .movie-info {
+  color: #818181;
+  font-size: 14px;
+}
+.movie .dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 3px 6px;
+}
+.movie .movie-type {
+  float: right;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1570px) {
+  .main .text {
+    font-size: 11.2px;
+  }
+}
